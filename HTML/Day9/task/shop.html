@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Registration Form</title>
+</head>
+<body>
+    <main>
+        <center>
+
+<h2>Electronics Shop</h2>
+
+<form>
+
+    <label>Product ID:</label>
+    <input type="text" name="product_id" required><br><br>
+
+    <label>Product Name:</label>
+    <input type="text" name="product_name" required><br><br>
+
+    <label>Brand:</label>
+    <input type="text" name="brand" required><br><br>
+
+    <label>Category:</label>
+    <select name="category">
+        <option>Select Category</option>
+        <option>Electronics</option>
+        <option>Clothing</option>
+        <option>Furniture</option>
+        <option>Groceries</option>
+        <option>Books</option>
+    </select><br><br>
+
+    <label>Price:</label>
+    <input type="number" name="price"required><br><br>
+
+    <label>Quantity:</label>
+    <input type="number" name="quantity"required><br><br>
+
+    <label>Supplier:</label>
+    <input type="text" name="supplier"><br><br>
+
+    <label>Product Image:</label>
+    <input type="file" name="product_image"required><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+<section>
+    <h2>Electronics Shop</h2>
+    <table border="2">
+        <thead>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Brand</th>
+            <th>Quantity</th>
+            <th>Stock Status</th>
+            <th>Stock</th>
+        </thead>
+        <tbody>
+     <tr>
+        <td>P001</td>
+        <td>Laptop</td>
+        <td>Dell</td>
+        <td>₹55,000</td>
+        <td>20</td>
+        <td>In Stock</td>
+    </tr>
+
+    <tr>
+        <td>P002</td>
+        <td>Smartphone</td>
+        <td>Samsung</td>
+        <td>₹25,000</td>
+        <td>5</td>
+        <td>Low Stock</td>
+    </tr>
+
+    <tr>
+        <td>P003</td>
+        <td>Headphones</td>
+        <td>Boat</td>
+        <td>₹2,000</td>
+        <td>0</td>
+        <td>Out of Stock</td>
+    </tr>
+        </tbody>
+    </table>
+</section>
+</center>
+    </main>
+
+</body>
+</html>

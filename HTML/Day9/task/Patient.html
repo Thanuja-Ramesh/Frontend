@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+</head>
+<body>
+    <center>
+        <main>
+            <h2>Apollo Hospital Patient Registration</h2>
+            <form >
+    <label for="patientid">Patient ID:</label>
+    <input type="text" id="patientid" name="patientid" placeholder="Enter the Patient ID" required><br><br>
+
+    <label for="patientname">Patient Name:</label>
+    <input type="text" id="patientname" name="patientname" placeholder="Enter the Patient Name"><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" placeholder="Enter the Age" required><br><br>
+    <label for="usergender">Gender</label>
+    <input type="radio" name="gender" id="usergender">Male
+    <input type="radio" name="gender" id="usergender">Female
+    <input type="radio" name="gender" id="usergender">Other<br /><br />
+
+    <label for="bloodgroup">Blood Group:</label>
+    <select id="bloodgroup" name="bloodgroup">
+        <option value="">Select Blood Group</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+        <option>O+</option>
+        <option>O-</option>
+    </select><br><br>
+
+    <label for="doctor">Doctor:</label>
+    <input type="text" id="doctor" name="doctor" required><br><br>
+
+    <label for="appointment">Appointment Date:</label>
+    <input type="date" id="appointment" name="appointment" required><br><br>
+
+    <label for="symptoms">Symptoms:</label>
+    <textarea id="symptoms" name="symptoms" rows="4" cols="30"></textarea><br><br>
+
+    <label for="report">Medical Report Upload:</label>
+    <input type="file" id="report" name="report"required><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+<section>
+    <h2>Apollo Hospital Patient Registration</h2>
+    <table border="2">
+        <thead>
+            <th>Patient ID</th>
+            <th>Patient Name</th>
+            <th>Doctor</th>
+            <th>Blood Group</th>
+            <th>Appointment Date</th>
+            <th>Status</th>
+        </thead>
+        <tbody>
+        <tr>
+        <td>P001</td>
+        <td>Rahul</td>
+        <td>Dr. Hima</td>
+        <td>O+</td>
+        <td>15-08-2026</td>
+        <td>Confirmed</td>
+    </tr>
+    <tr>
+        <td>P002</td>
+        <td>Priya</td>
+        <td>Dr. Thara</td>
+        <td>A+</td>
+        <td>18-08-2026</td>
+        <td>Pending</td>
+    </tr>
+    <tr>
+        <td>P003</td>
+        <td>Anil</td>
+        <td>Dr. Sharma</td>
+        <td>B-</td>
+        <td>20-08-2026</td>
+        <td>Completed</td>
+    </tr>
+    <tr>
+        <td>P004</td>
+        <td>Rose</td>
+        <td>Dr. Jasmine</td>
+        <td>B-</td>
+        <td>24-08-2026</td>
+        <td>Pending</td>
+    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+        </main>
+    </center>
+    
+</body>
+</html>

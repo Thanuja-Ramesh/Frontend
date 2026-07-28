@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <center>
+
+<h2>Engineering College</h2>
+
+<form>
+
+    <label>Student Name:</label>
+    <input type="text" name="student_name" required><br><br>
+
+    <label>Father Name:</label>
+    <input type="text" name="father_name"required><br><br>
+
+    <label>Mother Name:</label>
+    <input type="text" name="mother_name"required><br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email"required><br><br>
+
+    <label>Phone:</label>
+    <input type="tel" name="phone" required><br><br>
+
+    <label>DOB:</label>
+    <input type="date" name="dob"required><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+    <br><br>
+
+    <label>Department:</label>
+    <select name="department">
+        <option>Select Department</option>
+        <option>Computer Science</option>
+        <option>Information Technology</option>
+        <option>Electronics</option>
+        <option>Mechanical</option>
+        <option>Civil</option>
+    </select>
+    <br><br>
+
+    <label>Percentage:</label>
+    <input type="number" name="percentage" step="0.01"><br><br>
+    
+    <label for="useraddress">Address</label>
+            <textarea name="" id="useraddress" placeholder="Enter your address" required></textarea><br><br>
+
+    <label>Passport Size Photo:</label>
+    <input type="file" name="photo"><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+<section>
+    <h2>Engineering College</h2>
+    <table border="2"> 
+        <thead>
+            <th>Application ID</th>
+            <th>Student Name</th>
+            <th>Department</th>
+            <th>Percentage</th>
+            <th>Email</th>
+            <th>Admission Status</th>
+        </thead>
+        <tbody>
+            <tr>
+        <td>APP001</td>
+        <td>Hima</td>
+        <td>Computer Science</td>
+        <td>92%</td>
+        <td>hima@gmail.com</td>
+        <td>Approved</td>
+    </tr>
+    <tr>
+        <td>APP002</td>
+        <td>Thara</td>
+        <td>Information Technology</td>
+        <td>88%</td>
+        <td>thara@gmail.com</td>
+        <td>Pending</td>
+    </tr>
+    <tr>
+        <td>APP003</td>
+        <td>Anil Verma</td>
+        <td>Electronics</td>
+        <td>85%</td>
+        <td>anil@gmail.com</td>
+        <td>Rejected</td>
+    </tr>
+    <tr>
+        <td>APP004</td>
+        <td>Prema</td>
+        <td>Electronics</td>
+        <td>85%</td>
+        <td>prema@gmail.com</td>
+        <td>Rejected</td>
+    </tr>
+</tbody>
+        
+    </table>
+</section>
+</center>
+
+</body>
+</html>

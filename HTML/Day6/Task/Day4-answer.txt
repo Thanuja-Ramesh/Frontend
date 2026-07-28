@@ -1,0 +1,11 @@
+1. Attributes provides additional information about HTML elements
+2. Inside the opening tag
+3. attributes="value"
+4. id for Unique and class for reusable
+5. href is used to specify a hyperlink describtion
+6. src is used to specify image source
+7. Alternative text displayed when image fails to load.
+8. Displays hint text inside an input field.
+9. Makes an input field mandatory.
+10.Attributes that can be used on almost every HTML element.
+11. Attributes that work only on specific HTML elements.

@@ -1,0 +1,10 @@
+1. A block level element start on a new line. It occupies the full width of your screen or website
+2. div, p, h1toh6, main, section and article
+3. Inline elements does not start on a new line, It occupies only their required width
+4. span, a, img, strong and em
+5. block level element starts with a new line and it occupies full width of your screen or website whereas, inline element does not start on a new line and it occupies only their required width
+6. b is a visual bond and strong is a important text + semantic 
+7. i is a italic text and em is a emphasized text with meaning
+8. Purpose of main tag is used to highlight text
+9. Interactive Elements allow users to interact with the webpage
+10. a, button, input select and textarea
