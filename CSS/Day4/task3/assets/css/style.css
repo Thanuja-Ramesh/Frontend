@@ -1,0 +1,44 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    height: 200px;
+   
+}
+.head{
+    background-color: blue;
+    color: black;
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+}
+.style{
+    background-color:aqua;
+    color: red;
+    padding: 20px;
+    height: 500px;
+   
+}
+.body{
+    background-color: firebrick;
+    color: black;
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+    display: block;
+}

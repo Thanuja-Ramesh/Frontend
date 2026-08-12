@@ -1,0 +1,40 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.box1{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: solid 2px blue;
+}
+.box2{
+    background-color: rebeccapurple;
+    color: black;
+    padding: 10px;
+    border: solid 2px white;
+    visibility: hidden;
+}
+.box3{
+    background-color: rebeccapurple;
+    color: white;
+    padding: 20px;
+    border: solid 2px blueviolet;
+}
+.box4{
+    background-color: blueviolet;
+    color: wheat;
+    padding: 20px;
+    border: solid 2px white;
+    display: none;
+}

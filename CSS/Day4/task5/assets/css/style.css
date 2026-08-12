@@ -1,0 +1,27 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.title1{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border:solid 2px yellow;
+    visibility: hidden;
+}
+.title2{
+    background-color: chocolate;
+    color: aqua;
+    padding: 20px;
+    border: solid 2px yellow;
+}

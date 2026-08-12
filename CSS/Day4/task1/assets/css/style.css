@@ -1,0 +1,36 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+   text-decoration: none;
+}
+.parent{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.child{
+    background-color: aqua;
+    color: red;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 3opx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
