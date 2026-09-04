@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Guide & Documentation</title>
+    <link rel="shortcut icon" href="assets/image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="name1">
+            <div class="title">
+                <h2>JavaScript</h2>
+            </div>
+            <div class="link">
+                <a href="#home">Home</a>
+                <a href="#variables">Variables</a>
+                <a href="#primitive">Data Types</a>
+                <a href="#function">Functions</a>
+                <a href="#es6">ES6+</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <div class="parent">
+            <div class="image">
+                <img src="assets/image/js_image.jpg" alt="JavaScript Banner" width="1400" height="400">
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="para">
+            <h2>Introduction to JavaScript</h2>
+            <ul>
+                <li><strong>Language of the Web:</strong> JavaScript is the primary programming language that powers interactivity on the web.</li>
+                <li><strong>DOM Manipulation:</strong> JavaScript can dynamically update and modify both HTML content and CSS styles in real time.</li>
+                <li><strong>Data Processing:</strong> JavaScript can calculate, manipulate, validate, and manage data across client and server environments.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="variables">
+        <div>
+            <h2>Variables</h2>
+            <p>A variable is a container used to store data values in JavaScript.</p>
+            <p>JavaScript provides three primary keywords for declaring variables:</p>
+            <ol>
+                <li><strong>var</strong>
+                    <p>The traditional (pre-ES6) way of declaring variables. Function-scoped and hoisted.</p>
+                </li>
+                <li><strong>let</strong>
+                    <p>Block-scoped variable declaration used when the value is expected to change.</p>
+                </li>
+                <li><strong>const</strong>
+                    <p>Block-scoped declaration used when the variable reference should remain constant and not be reassigned.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Features</th>
+                        <th>var</th>
+                        <th>let</th>
+                        <th>const</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Reassign Value</strong></td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Redeclare</strong></td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Scope</strong></td>
+                        <td>Global / Function Scope</td>
+                        <td>Block Scope</td>
+                        <td>Block Scope</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Modern Usage</strong></td>
+                        <td>Less Preferred (Legacy)</td>
+                        <td>Common (Recommended)</td>
+                        <td>Common (Recommended)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="primitive">
+        <div>
+            <h2>Data Types</h2>
+            <h3>Primitive Data Types</h3>
+            <p>Primitive data types represent single, immutable values stored directly in the stack memory.</p>
+            <ol>
+                <li>
+                    <strong>String:</strong>
+                    <p>Represents textual data enclosed in single quotes, double quotes, or backticks.</p>
+                    <p><code>Example: "Hello", 'World', `JavaScript`</code></p>
+                </li>
+                <li>
+                    <strong>Number:</strong>
+                    <p>Represents both integers and floating-point numbers (decimals), as well as special values like <code>Infinity</code>, <code>-Infinity</code>, and <code>NaN</code>.</p>
+                    <p><code>Example: 42, 3.14, -100</code></p>
+                </li>
+                <li>
+                    <strong>BigInt:</strong>
+                    <p>Used for integers of arbitrary length that exceed the safe limit of the standard Number type.</p>
+                    <p><code>Example: 9007199254740991n</code></p>
+                </li>
+                <li>
+                    <strong>Boolean:</strong>
+                    <p>Represents a logical entity with only two possible values: <code>true</code> or <code>false</code>.</p>
+                    <p><code>Example: true, false</code></p>
+                </li>
+                <li>
+                    <strong>Undefined:</strong>
+                    <p>Automatically assigned to a variable that has been declared but not yet initialized with a value.</p>
+                    <p><code>Example: let x; // undefined</code></p>
+                </li>
+                <li>
+                    <strong>Null:</strong>
+                    <p>Represents an intentional, explicit absence of any object value or reference.</p>
+                    <p><code>Example: let user = null;</code></p>
+                </li>
+                <li>
+                    <strong>Symbol:</strong>
+                    <p>Introduced in ES6, represents a unique and immutable identifier often used as private object property keys.</p>
+                    <p><code>Example: Symbol("id")</code></p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="operators">
+        <div>
+            <h2>Operators</h2>
+            <ol>
+                <li>
+                    <strong>Arithmetic Operators</strong>
+                    <p>Perform mathematical calculations on operands.</p>
+                    <p><code>Example: +, -, *, /, % (remainder), ** (exponent)</code></p>
+                </li>
+                <li>
+                    <strong>Assignment Operators</strong>
+                    <p>Assign values to variables, optionally combined with calculations.</p>
+                    <p><code>Example: =, +=, -=, *=, /=</code></p>
+                </li>
+                <li>
+                    <strong>Comparison Operators</strong>
+                    <p>Compare two values and return a boolean (<code>true</code> or <code>false</code>).</p>
+                    <p><code>Example: ==, === (strict equality), !=, !==, &lt;, &gt;, &lt;=, &gt;=</code></p>
+                </li>
+                <li>
+                    <strong>Logical Operators</strong>
+                    <p>Determine logic between expressions or boolean values.</p>
+                    <p><code>Example: &amp;&amp; (AND), || (OR), ! (NOT)</code></p>
+                </li>
+                <li>
+                    <strong>Ternary Operator</strong>
+                    <p>A shorthand conditional expression with three operands.</p>
+                    <p><code>Example: condition ? exprIfTrue : exprIfFalse</code></p>
+                </li>
+                <li>
+                    <strong>Type &amp; Relational Operators</strong>
+                    <p>Evaluate data types or object property relationships.</p>
+                    <p><code>Example: typeof, instanceof, in</code></p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="conditionals">
+        <div>
+            <h2>Conditional Statements</h2>
+            <p>Conditional statements allow your code to make decisions and execute different branches of code based on dynamic conditions.</p>
+            <ol>
+                <li>
+                    <strong>The <code>if</code> Statement</strong>
+                    <p>Executes a code block only if the specified condition evaluates to true.</p>
+                </li>
+                <li>
+                    <strong>The <code>if...else</code> Statement</strong>
+                    <p>Provides an alternative block of code that runs when the initial condition is false.</p>
+                </li>
+                <li>
+                    <strong>The <code>if...else if...else</code> Chain</strong>
+                    <p>Evaluates multiple distinct conditions in sequence until one matches.</p>
+                </li>
+                <li>
+                    <strong>The <code>switch</code> Statement</strong>
+                    <p>Matches an expression's value against multiple <code>case</code> clauses for clean branching logic.</p>
+                </li>
+                <li>
+                    <strong>The Ternary Operator (<code>? :</code>)</strong>
+                    <p>A concise single-line expression format for conditional evaluation.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="loops">
+        <div>
+            <h2>Loops</h2>
+            <p>Loops repeatedly execute a block of code while a specified condition is true, automating repetitive tasks efficiently.</p>
+            <ol>
+                <li>
+                    <strong>Standard <code>for</code> Loop</strong>
+                    <p>Best suited when you know in advance how many times you need to iterate.</p>
+                </li>
+                <li>
+                    <strong><code>while</code> Loop</strong>
+                    <p>Checks the condition before each iteration, executing as long as the condition evaluates to true.</p>
+                </li>
+                <li>
+                    <strong><code>do...while</code> Loop</strong>
+                    <p>Guarantees that the code block runs at least once before testing the condition.</p>
+                </li>
+                <li>
+                    <strong><code>for...of</code> Loop</strong>
+                    <p>Clean modern syntax to iterate over values of iterable objects (Arrays, Strings, Sets, Maps).</p>
+                </li>
+                <li>
+                    <strong><code>for...in</code> Loop</strong>
+                    <p>Iterates over all enumerable keys and properties of an object.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="non-primitive">
+        <div>
+            <h2>Non-Primitive Data Types</h2>
+            <p>Non-primitive data types (reference types) store a memory reference pointing to the location in the heap memory where the actual data resides.</p>
+            
+            <h3>Arrays</h3>
+            <p>An array is an ordered list used to store multiple values under a single variable name. Under the hood, arrays are specialized objects with numeric keys (indexes) and built-in methods.</p>
+            
+            <h3>Objects</h3>
+            <p>An object is a collection of key-value pairs. Keys are typically strings or symbols, and values can be any valid JavaScript type, including primitives, functions, or other objects.</p>
+        </div>
+    </section>
+
+    <section id="function">
+        <div>
+            <h2>Functions</h2>
+            <p>A function is a reusable block of code designed to perform a specific task when invoked.</p>
+            <ol>
+                <li>
+                    <strong>Function Declaration:</strong>
+                    <p>A traditional named function declared with the <code>function</code> keyword. Hoisted to the top of its scope.</p>
+                </li>
+                <li>
+                    <strong>Function Expression:</strong>
+                    <p>A function assigned directly to a variable. Not hoisted.</p>
+                </li>
+                <li>
+                    <strong>Arrow Functions:</strong>
+                    <p>Introduced in ES6, provides concise syntax and lexically binds <code>this</code> from its enclosing context.</p>
+                </li>
+                <li>
+                    <strong>Anonymous Functions:</strong>
+                    <p>Functions defined without a name, commonly passed as callbacks or event handlers.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="scope">
+        <div>
+            <h2>Scope</h2>
+            <p>Scope determines the visibility and accessibility of variables, functions, and objects across different parts of your code.</p>
+            <ol>
+                <li>
+                    <strong>Global Scope:</strong>
+                    <p>Variables declared outside of all functions or blocks belong to the global scope and are accessible anywhere.</p>
+                </li>
+                <li>
+                    <strong>Function Scope (Local Scope):</strong>
+                    <p>Variables declared inside a function are accessible only within that function.</p>
+                </li>
+                <li>
+                    <strong>Block Scope:</strong>
+                    <p>Introduced in ES6; variables declared with <code>let</code> and <code>const</code> are strictly bound to the nearest enclosing pair of curly braces <code>{}</code>.</p>
+                    <ul>
+                        <li><code>let</code> and <code>const</code> are block-scoped.</li>
+                        <li><code>var</code> is NOT block-scoped and leaks outside curly brackets.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="hoisting">
+        <h2>Hoisting</h2>
+        <p>Hoisting is JavaScript's default behavior of moving variable, function, and class declarations to the top of their containing scope during compilation before execution.</p>
+        
+        <h2>Temporal Dead Zone (TDZ)</h2>
+        <p>The Temporal Dead Zone (TDZ) is the period between the beginning of a block scope and the line where a <code>let</code> or <code>const</code> variable is declared. Accessing the variable before its initialization results in a <code>ReferenceError</code>.</p>
+    </section>
+
+    <section id="es6">
+        <h2>Difference between ES5 and ES6+ in JavaScript</h2>
+        <p><strong>ES5:</strong> ECMAScript 5 standard released in 2009.</p>
+        <p><strong>ES6+:</strong> ECMAScript 2015 and subsequent modern ECMAScript standards.</p>
+        
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ES5 (Legacy)</th>
+                        <th>ES6+ (Modern)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Uses <code>var</code> for variable declarations</td>
+                        <td>Uses <code>let</code> and <code>const</code></td>
+                    </tr>
+                    <tr>
+                        <td>Traditional function declarations and expressions</td>
+                        <td>Arrow functions (<code>=&gt;</code>) and concise methods</td>
+                    </tr>
+                    <tr>
+                        <td>String concatenation using <code>+</code> operator</td>
+                        <td>Template literals with interpolation (<code>`Hello ${name}`</code>)</td>
+                    </tr>
+                    <tr>
+                        <td>Prototype-based inheritance functions</td>
+                        <td>Native <code>class</code> syntax with <code>extends</code></td>
+                    </tr>
+                    <tr>
+                        <td>Manual property assignment</td>
+                        <td>Destructuring assignment for Arrays and Objects</td>
+                    </tr>
+                    <tr>
+                        <td>Manual fallback checks for arguments</td>
+                        <td>Default function parameter values</td>
+                    </tr>
+                    <tr>
+                        <td>Callback-based asynchronous flow</td>
+                        <td>Promises, <code>async/await</code> syntax</td>
+                    </tr>
+                    <tr>
+                        <td>Standard <code>for</code> and <code>for...in</code> loops</td>
+                        <td><code>for...of</code> loop and iterable protocols</td>
+                    </tr>
+                    <tr>
+                        <td>CommonJS / IIFE module patterns</td>
+                        <td>Native ES Modules (<code>import</code> / <code>export</code>)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; JavaScript Learning Guide &bull; Built with modern HTML5 &amp; CSS3</p>
+    </footer>
+</body>
+</html>
