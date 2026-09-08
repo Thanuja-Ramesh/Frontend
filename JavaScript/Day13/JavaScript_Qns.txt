@@ -1,0 +1,49 @@
+1. What is DOM in JavaScript? Why do we need DOM?
+DOM stands for Document Object Model.
+When a browser loads an HTML page, it converts the HTML into a tree-like structure of objects. JavaScript uses the DOM to access and modify those HTML elements.
+Why do we need DOM?
+We use DOM to:
+Change HTML content
+Change CSS styles
+Add or remove elements
+Handle button clicks and other events
+Create dynamic web pages
+DOM is a programming interface that represents an HTML document as objects. It allows JavaScript to access, modify, and interact with HTML elements dynamically.
+2.Difference between HTML and DOM
+HTML	                                                DOM
+HTML is the markup/code written by the developer.	DOM is the browser's object representation of that HTML.
+Defines the structure of a webpage.	                Allows JavaScript to interact with that structure.
+Uses tags like <h1>, <p>, <button>.	                Represents those elements as objects/nodes.
+Mainly static.	                                        Can be dynamically changed.
+3. What is the document object in JavaScript?
+The document object represents the entire HTML document/web page.
+We use document to access HTML elements.
+4. What are DOM selectors? Name important DOM selector methods.
+DOM selectors are methods used to find/select HTML elements from the DOM.
+document.getElementById()
+document.getElementsByClassName()
+document.getElementsByTagName()
+document.querySelector()
+document.querySelectorAll()
+5. Difference between getElementById() and querySelector()
+getElementById()	                 querySelector()
+Selects by ID only.	             Can select using CSS selectors.
+Uses ID name directly.	             Uses #, ., tag names, etc.
+Returns one element.	             Returns the first matching element.
+6.Difference between querySelector() and querySelectorAll()
+querySelector()                             querySelectorAll()
+
+Returns only the first matching element.   Returns all matching elements.
+7. Difference between textContent, innerText, and innerHTML
+textContent:
+Gets or changes all text content, including text that may currently be hidden by CSS.
+innerText:
+Gets or changes the visible text of an element.
+innerHTML:
+Gets or changes HTML content, including HTML tags.
+8. How can we change the CSS style using JavaScript?
+We can use the style property.
+heading.style.color = "red";
+heading.style.fontSize = "30px";
+heading.style.backgroundColor = "yellow";
+heading.style.textAlign = "center";

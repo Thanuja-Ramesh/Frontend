@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Hide Content</title>
+    <style>
+        #content {
+            
+            opacity: 0;
+            
+            transition: max-height 0.5s ease, opacity 0.5s ease;
+        }
+
+        #content.show {
+            
+            opacity: 1;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <p id="content">
+        JavaScript is a powerful programming language used to make web pages interactive.
+    </p>
+
+    <button id="btn">Show Details</button>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
