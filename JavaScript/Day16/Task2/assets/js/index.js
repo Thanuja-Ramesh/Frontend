@@ -2,6 +2,6 @@ const box = document.getElementById("box");
 const button = document.getElementById("btn");
 
 button.addEventListener("click", () => {
-    box.classList.add("active");
-    box.textContent = "Active Process"
+    box.classList.remove("active");
+    
 });
