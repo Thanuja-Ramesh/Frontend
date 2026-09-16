@@ -21,6 +21,7 @@
     --accent-bs: #7952b3;
     --accent-tw: #06b6d4;
     --accent-js: #f7df1e;
+    --accent-react: #00d8ff;
     --accent-notes: #f59e0b;
     --accent-assign: #10b981;
     --accent-primary: #6366f1;
@@ -463,8 +464,113 @@ body {
 .theme-bootstrap .tech-icon-wrapper { background: rgba(121, 82, 179, 0.15); color: var(--accent-bs); border: 1px solid rgba(121, 82, 179, 0.3); }
 .theme-tailwind .tech-icon-wrapper { background: rgba(6, 182, 212, 0.15); color: var(--accent-tw); border: 1px solid rgba(6, 182, 212, 0.3); }
 .theme-js .tech-icon-wrapper { background: rgba(247, 223, 30, 0.15); color: var(--accent-js); border: 1px solid rgba(247, 223, 30, 0.3); }
+.theme-react .tech-icon-wrapper { background: rgba(0, 216, 255, 0.15); color: var(--accent-react); border: 1px solid rgba(0, 216, 255, 0.3); }
 .theme-notes .tech-icon-wrapper { background: rgba(245, 158, 11, 0.15); color: var(--accent-notes); border: 1px solid rgba(245, 158, 11, 0.3); }
 .theme-assign .tech-icon-wrapper { background: rgba(16, 185, 129, 0.15); color: var(--accent-assign); border: 1px solid rgba(16, 185, 129, 0.3); }
+
+/* Header Badges */
+.module-header-badges {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.module-days-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 8px;
+    background: rgba(99, 102, 241, 0.12);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    color: #a5b4fc;
+}
+
+/* ==========================================================================
+   DAY-WISE STRUCTURE & ACCENTS
+   ========================================================================== */
+.day-groups-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.day-group {
+    background: rgba(15, 23, 42, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 18px 20px;
+    transition: var(--transition-normal);
+}
+
+.day-group:hover {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(15, 23, 42, 0.65);
+}
+
+.day-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.day-header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.day-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: rgba(99, 102, 241, 0.15);
+    color: #a5b4fc;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.theme-html .day-badge { background: rgba(255, 87, 34, 0.15); color: var(--accent-html); border-color: rgba(255, 87, 34, 0.3); }
+.theme-css .day-badge { background: rgba(41, 101, 241, 0.15); color: var(--accent-css); border-color: rgba(41, 101, 241, 0.3); }
+.theme-bootstrap .day-badge { background: rgba(121, 82, 179, 0.15); color: var(--accent-bs); border-color: rgba(121, 82, 179, 0.3); }
+.theme-tailwind .day-badge { background: rgba(6, 182, 212, 0.15); color: var(--accent-tw); border-color: rgba(6, 182, 212, 0.3); }
+.theme-js .day-badge { background: rgba(247, 223, 30, 0.15); color: var(--accent-js); border-color: rgba(247, 223, 30, 0.3); }
+.theme-react .day-badge { background: rgba(0, 216, 255, 0.15); color: var(--accent-react); border-color: rgba(0, 216, 255, 0.3); }
+.theme-notes .day-badge { background: rgba(245, 158, 11, 0.15); color: var(--accent-notes); border-color: rgba(245, 158, 11, 0.3); }
+.theme-assign .day-badge { background: rgba(16, 185, 129, 0.15); color: var(--accent-assign); border-color: rgba(16, 185, 129, 0.3); }
+
+.day-topic {
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.2px;
+}
+
+.day-tasks-count {
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.04);
+    padding: 2px 8px;
+    border-radius: 9999px;
+}
+
+.day-mini-tag {
+    font-size: 0.68rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-muted);
+    margin-left: 4px;
+}
 
 /* ==========================================================================
    TASK GRID & PILL BUTTONS
@@ -472,7 +578,7 @@ body {
 .task-grid {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 12px;
     padding: 0;
     margin: 0;
@@ -500,7 +606,7 @@ body {
 .task-link-left {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
     overflow: hidden;
 }
 
@@ -511,11 +617,72 @@ body {
 }
 
 .task-number {
-    font-size: 0.78rem;
+    font-size: 0.75rem;
     font-weight: 700;
     font-family: 'JetBrains Mono', monospace;
-    color: var(--text-muted);
+    color: var(--text-secondary);
     text-transform: uppercase;
+}
+
+/* Badge Variations */
+.badge-task {
+    color: var(--text-secondary);
+}
+
+.badge-practice {
+    color: #38bdf8 !important;
+    background: rgba(56, 189, 248, 0.12);
+    padding: 1px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.badge-capstone {
+    color: #34d399 !important;
+    background: rgba(52, 211, 153, 0.12);
+    padding: 1px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.badge-note {
+    color: #fbbf24 !important;
+    background: rgba(251, 191, 36, 0.12);
+    padding: 1px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.badge-vite {
+    color: #c084fc !important;
+    background: rgba(192, 132, 252, 0.12);
+    padding: 1px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(192, 132, 252, 0.3);
+}
+
+.badge-cra {
+    color: #60a5fa !important;
+    background: rgba(96, 165, 250, 0.12);
+    padding: 1px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+}
+
+.badge-test {
+    color: #f472b6 !important;
+    background: rgba(244, 114, 182, 0.12);
+    padding: 1px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(244, 114, 182, 0.3);
+}
+
+.badge-article {
+    color: #a78bfa !important;
+    background: rgba(167, 139, 250, 0.12);
+    padding: 1px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(167, 139, 250, 0.3);
 }
 
 .note-badge {
@@ -535,7 +702,7 @@ body {
 }
 
 .task-name {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     font-weight: 600;
     color: var(--text-primary);
     white-space: nowrap;
@@ -571,6 +738,9 @@ body {
 
 .theme-js .task-link:hover { border-color: var(--accent-js); }
 .theme-js .task-link:hover .task-number { color: var(--accent-js); }
+
+.theme-react .task-link:hover { border-color: var(--accent-react); }
+.theme-react .task-link:hover .task-number { color: var(--accent-react); }
 
 .theme-notes .task-link:hover { border-color: var(--accent-notes); }
 .theme-notes .task-link:hover .task-number { color: var(--accent-notes); }

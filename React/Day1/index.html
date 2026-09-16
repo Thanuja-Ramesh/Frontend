@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <h4>What is React?</h4>
+    <p>React is an open-source JavaScript library used to build interactive and reusable user interfaces, especially for web applications. React was created at Facebook and was open-sourced in 2013. Today it is maintained by Meta and the open-source community. React mainly focuses on the UI layer of an application.</p>  
+<p>In traditional JavaScript applications, developers manually select DOM elements and update them whenever data changes. React provides a declarative and component-based approach. We describe what the UI should look like for the current data/state, and React handles the necessary rendering and DOM updates.</p>
+<h4>Is React a library or framework?</h4>
+<p>React is a library, not a framework. Specifically, it is an unopinionated JavaScript library focused exclusively on the "view layer" of an application—meaning its primary job is building user interfaces, handling rendering, and managing UI updates. </p> 
+<h4>What is a component?</h4>
+<p>A component is a reusable piece of UI. In modern React, components are commonly JavaScript functions that return JSX.</p>
+<p>For example, instead of writing navbar code repeatedly, we can create one "Navbar" component and use it wherever required. Components make applications easier to divide into manageable pieces.</p>
+<h4>Why are components important?</h4>
+<p>Suppose we create an e-commerce website.</p>
+<p>Without component separation:</p>
+<ul>
+    <li>One Huge File</li>
+    <li>Navbar</li>
+    <li>Banner</li>
+    <li>Products</li>
+    <li>Carts</li>
+    <li>Footer</li>
+    <li>Everything Together</li>
+</ul>
+<p>With React:</p>
+<p>Benefits include:</p>
+<ul>
+    <li>Reusability</li>
+    <li>Maintainability</li>
+    <li>Readability</li>
+    <li>Separation of concerns</li>
+    <li>Easier testing</li>
+    <li>Better application structure</li>
+</ul>
+<h4>What is JSX?</h4>
+<p>JSX stands for JavaScript XML. It is a syntax extension commonly used with React that allows developers to describe UI using HTML-like markup inside JavaScript.</p>
+<p>Example</p>
+<p>const App = () => {</p>
+
+<p>return (</p>
+
+<h4>Hello React</h4>
+
+<p>);</p>
+
+<p>};</p>
+<p>This:
+
+<h4>Hello React</h4>is JSX.</p>
+<p>Browsers do not directly execute JSX syntax as plain JavaScript. Build tools such as Vite use transformation tooling so JSX is converted into JavaScript that can be executed by the browser.</p>
+<h4>What is Virtual DOM?</h4>
+<p>Virtual DOM is a common term for React's in-memory representation of the UI. React uses its internal tree structures to determine what the UI should look like based on the latest component output.</p>
+<p>When state changes, React renders the affected component logic again, creates the next representation, determines the necessary changes, and then commits the required updates to the browser DOM.</p>
+<h4>What is the Real DOM?</h4>
+<p>DOM stands for Document Object Model. The browser represents an HTML document as a tree of nodes/elements that JavaScript and browser</p>
+<h4>What ix reconciliation?</h4>
+<p>Reconciliation is the process React uses to determine how a newly rendered element/component tree relates to the previous one and what updates are necessary.</p>
+<p>When props or state change, React renders again. During reconciliation, React compares the new element tree with the previous tree, preserves or replaces component instances where appropriate, and determines what work needs to be committed to the DOM.</p>
+
+</body>
+</html>
