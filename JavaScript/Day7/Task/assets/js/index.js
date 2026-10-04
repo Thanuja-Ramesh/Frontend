@@ -12,7 +12,10 @@ console.log(student.Course);
 console.log(student.Mark);
 
 //Array of Objects
-const students=[{name:"Hima",mark:99},{name:"Thara",mark:84},{name:"Prema",mark:80}]
+const students=[
+    {name:"Hima",mark:99},
+    {name:"Thara",mark:84},
+    {name:"Prema",mark:80}]
 for(i=0;i<students.length;i++){
     console.log(students[i].name);
     console.log(students[i].mark);

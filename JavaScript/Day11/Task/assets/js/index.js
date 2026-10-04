@@ -1,4 +1,6 @@
-//Create a function called processNumber that accepts a number and a callback function. Pass the result to the callback and display the output.
+//Create a function called processNumber that accepts a number and a 
+// callback function. Pass the result to the callback and display the 
+// output.
 function processNumber(number, callback) {
     let result = number * 2;
     callback(result);

@@ -1,10 +1,12 @@
-//Create a function that accepts two numbers as parameters and returns their sum.
+//Create a function that accepts two numbers as parameters and 
+// returns their sum.
 function sum(a,b){
     return a+b;
     }
     console.log(sum(10,11));
 
-//Create a function that accepts a number n and uses a for loop to print all even numbers from 1 to n.
+//Create a function that accepts a number n and uses a for loop to 
+// print all even numbers from 1 to n.
 function printSum(n){
     for(let i=1;i<=n;i++){
         if(i%2===0){
@@ -16,7 +18,8 @@ function printSum(n){
 }
 printSum(10)
 
-//Create an arrow function that accepts a number and returns its factorial.
+//Create an arrow function that accepts a number and returns 
+// its factorial.
 
 const factorial = (n) => {
     let result = 1;

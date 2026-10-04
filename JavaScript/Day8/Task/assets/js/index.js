@@ -20,7 +20,8 @@ for(i=0;i<evenNum.length;i++){
         
 }
 
-// Create an array of student objects containing name and mark. Use a for loop to print the names of students who scored more than 80.
+// Create an array of student objects containing name and mark. Use a for loop 
+// to print the names of students who scored more than 80.
 const studentDetail=[
     {name:"Hima",mark:99},
     {name:"Thara",mark:94},
@@ -32,7 +33,8 @@ for(i=0;i<studentDetail.length;i++){
         
     }
 }
-//Create an arrow function that accepts two numbers as parameters and returns their sum
+//Create an arrow function that accepts two numbers as parameters 
+// and returns their sum
 const sumofTwo=(a,b)=>a+b;
 console.log(sumofTwo(10,11));
 

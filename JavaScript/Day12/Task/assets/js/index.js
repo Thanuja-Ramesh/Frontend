@@ -12,15 +12,17 @@ console.log("final array",fruits);
 console.log();
 
 
-console.log("Create an array of 5 city names. Remove the first city using shift(), then add a new city at the beginning using unshift().");
+// Create an array of 5 city names. Remove the first city using shift(), 
+// then add a new city at the beginning using unshift().
 
 
 let city=["nagai","chennai","bangalore","mumbai","madurai"]
 city.shift()
-city.unshift()
+city.unshift("nagai")
 console.log(city);
  
-//Create an array of 5 student names. Use forEach() to print each student's name along with their position number.
+//Create an array of 5 student names. Use forEach() to print each 
+// student's name along with their position number.
 
 //Expected format:
 

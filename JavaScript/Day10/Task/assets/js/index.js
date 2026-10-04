@@ -125,8 +125,9 @@ console.log("Object Destructuring:");
 console.log(name);
 console.log(age);
 console.log(course);
-//Explain the difference between Rest Parameter and Spread Syntax. Write one program using Rest and one program using Spread.
-//Rest Parameter
+//Explain the difference between Rest Parameter and Spread Syntax. 
+// Write one program using Rest and one program using Spread.Rest Parameter
+
 function plus(...numbers) {
     let total = 0;
 
